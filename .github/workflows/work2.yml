@@ -1,0 +1,23 @@
+name: Python Application Workflow
+
+on: [push]
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.8'
+        
+    - name : Installer pandas et numpy
+      uses: actions/setup-pandas@v2
+      uses: actions/setup-numpy@v2
+
+    - name : executer un code python qui import pandas et print('pandas dispo')
+      uses: /app2.py
+    
