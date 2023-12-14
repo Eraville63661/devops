@@ -1,2 +1,2 @@
-from pandas import Panda 
+from pandas import Pandas
 print("Pandas dispo")
